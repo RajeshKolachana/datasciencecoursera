@@ -1,0 +1,15 @@
+## This is a markdown file
+
+```{r, include=FALSE}
+library(knitr)
+library(markdown)
+
+#transform the .Rmd to a markdown (.md) file.
+knit("HelloWorld.Rmd")
+
+#transform the .md to HTML format
+markdownToHTML("HelloWorld.md", "HelloWorld.html",fragment.only = TRUE)
+
+
+```
+
